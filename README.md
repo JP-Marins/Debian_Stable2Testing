@@ -1,38 +1,67 @@
-# Stable2Testing
+# Debian_Stable2Testing
 
-Script em BASH para mudança do branch Stable para Testing, no Debian 12 Bookworm
+Script em BASH para mudar o branch do Debian 12 Bookworm de **Stable** para **Testing**.
 
-## Atenção
+---
 
-Não me responsabilizo pelos possíveis problemas que o usuário (você) possa encontrar ao usar tal script. Lembre-se que se tratando de servidores ou workstations de produção sensível, o branch Stable é mais recomendado. Use apenas o ramo Testing caso você queira pacotes mais recentes, e tenha alguma experiência com GNU/Linux.
+## Avisos Importantes ⚠️
 
-## Como utilizar
+- **Uso por sua conta e risco:** Não me responsabilizo por problemas que possam surgir ao usar este script.
+- **Estabilidade vs. Novidades:** O branch **Stable** é recomendado para servidores ou workstations críticas. Use **Testing** apenas se precisar de pacotes mais recentes e tiver alguma experiência com GNU/Linux.
+- **Backup:** Faça backup de seus dados importantes antes de executar o script.
 
-Após baixar os arquivos deste repositório, abra o terminal na pasta extraída.
-Altere o seu usuário para root usando o comando:
-```
-su
-```
-Para dar permissão de execução para o script (recomendado) use o comando:
-```
-chmod +x Stable2Testing.sh
-```
-E por fim, execute o script usando o comando:
-```
-sh Stable2Testing.sh
-```
+---
 
-A mudança de branches deve levar alguns minutos. Lembre-se de ficar de olho, pois será necessária alguma interação humana durante o processo (lembre-se de interagir com as teclas TAB, barra de espaço e Enter, para interfaces via terminal). Caso perceba algo de errado durante o processo, você pode cancelar usando o atalho:
-```
-Ctrl + C
-```
+## Como Utilizar 🛠️
 
-Quando o script finalizar, ele irá reiniciar o computador. Isto é de extrema importância, para finalização de todo o processo.
+1. **Baixe os arquivos do repositório.**
 
-## Possíveis erros
+2. **Abra o terminal** na pasta onde os arquivos foram extraídos.
 
-Caso o Debian esteja sem interface gráfica ao ser reiniciado, você pode baixar e instalar uma nova interface usando o comando:
-```
-tasksel
-```
-É necessário estar como usuário root para executar tal comando (a não ser que você tenha colocado o seu usuário no arquivo de sudoers).
+3. **Altere para o usuário root:**
+   ```bash
+   su
+   ```
+
+4. **Dê permissão de execução ao script (recomendado):**
+   ```bash
+   chmod +x Stable2Testing.sh
+   ```
+
+5. **Execute o script:**
+   ```bash
+   ./Stable2Testing.sh
+   ```
+
+---
+
+## O Processo 🔄
+
+- A mudança de branch levará alguns minutos.
+- Durante o processo, será necessária interação manual. Use:
+  - **TAB**, **barra de espaço** e **Enter** para navegar pelas opções no terminal.
+  - Caso perceba algo errado, você pode interromper o script com:
+    ```bash
+    Ctrl + C
+    ```
+
+- **Reinicialização:** Ao final, o computador será reiniciado automaticamente. Este passo é essencial para finalizar o processo.
+
+---
+
+## Possíveis Problemas e Soluções 🚨
+
+- **Sem interface gráfica após reiniciar:**  
+  Use o seguinte comando para instalar uma nova interface gráfica:
+  ```bash
+  tasksel
+  ```
+  Certifique-se de estar como usuário root ou no grupo `sudo` para executar este comando.
+
+---
+
+## Licença 📜
+
+Sinta-se à vontade para usar, modificar e compartilhar este script. Contribuições são bem-vindas!
+
+---
