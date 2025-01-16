@@ -30,7 +30,7 @@ Script em BASH para mudar o branch do Debian 12 Bookworm de **Stable** para **Te
 
 5. **Execute o script:**
    ```bash
-   sh Stable2Testing.sh
+   ./Stable2Testing.sh
    ```
 
 ---
@@ -45,7 +45,7 @@ Script em BASH para mudar o branch do Debian 12 Bookworm de **Stable** para **Te
     Ctrl + C
     ```
 
-- **Reinicialização:** Ao final, o computador será reiniciado automaticamente. Este passo é essencial para finalizar o processo.
+- **Reinicialização:** Ao final, você será perguntado se deseja reiniciar o computador. Este passo é essencial para finalizar o processo.
 
 ---
 
