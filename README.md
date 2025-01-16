@@ -30,7 +30,7 @@ Script em BASH para mudar o branch do Debian 12 Bookworm de **Stable** para **Te
 
 5. **Execute o script:**
    ```bash
-   ./Stable2Testing.sh
+   sh Stable2Testing.sh
    ```
 
 ---
