@@ -1,67 +1,68 @@
+
 # Debian_Stable2Testing
 
-Script em BASH para mudar o branch do Debian 12 Bookworm de **Stable** para **Testing**.
+BASH script to switch the Debian 12 Bookworm branch from **Stable** to **Testing**.
 
 ---
 
-## Avisos Importantes ⚠️
+## Important Warnings ⚠️
 
-- **Uso por sua conta e risco:** Não me responsabilizo por problemas que possam surgir ao usar este script.
-- **Estabilidade vs. Novidades:** O branch **Stable** é recomendado para servidores ou workstations críticas. Use **Testing** apenas se precisar de pacotes mais recentes e tiver alguma experiência com GNU/Linux.
-- **Backup:** Faça backup de seus dados importantes antes de executar o script.
+- **Use at your own risk:** I am not responsible for any issues that may arise from using this script.
+- **Stability vs. New Features:** The **Stable** branch is recommended for critical servers or workstations. Use **Testing** only if you need newer packages and have some experience with GNU/Linux.
+- **Backup:** Make sure to back up your important data before running the script.
 
 ---
 
-## Como Utilizar 🛠️
+## How to Use 🛠️
 
-1. **Baixe os arquivos do repositório.**
+1. **Download the files from the repository.**
 
-2. **Abra o terminal** na pasta onde os arquivos foram extraídos.
+2. **Open the terminal** in the folder where the files were extracted.
 
-3. **Altere para o usuário root:**
-   ```bash
+3. **Switch to root user:**
+   ```
    su
    ```
 
-4. **Dê permissão de execução ao script (recomendado):**
-   ```bash
+4. **Grant execution permission to the script (recommended):**
+   ```
    chmod +x Stable2Testing.sh
    ```
 
-5. **Execute o script:**
-   ```bash
+5. **Run the script:**
+   ```
    ./Stable2Testing.sh
    ```
 
 ---
 
-## O Processo 🔄
+## The Process 🔄
 
-- A mudança de branch levará alguns minutos.
-- Durante o processo, será necessária interação manual. Use:
-  - **TAB**, **barra de espaço** e **Enter** para navegar pelas opções no terminal.
-  - Caso perceba algo errado, você pode interromper o script com:
-    ```bash
+- The branch switch will take a few minutes.
+- During the process, manual interaction will be required. Use:
+  - **TAB**, **space bar**, **arrow keys** and **Enter** to navigate through options in the terminal.
+  - If you notice anything wrong, you can interrupt the script with:
+    ```
     Ctrl + C
     ```
 
-- **Reinicialização:** Ao final, você será perguntado se deseja reiniciar o computador. Este passo é essencial para finalizar o processo.
+- **Reboot:** At the end, you will be asked if you want to restart the computer. This step is essential to complete the process.
 
 ---
 
-## Possíveis Problemas e Soluções 🚨
+## Possible Issues and Solutions 🚨
 
-- **Sem interface gráfica após reiniciar:**  
-  Use o seguinte comando para instalar uma nova interface gráfica:
-  ```bash
+- **No graphical interface after reboot:**  
+  Use the following command to install a new graphical interface:
+  ```
   tasksel
   ```
-  Certifique-se de estar como usuário root ou no grupo `sudo` para executar este comando.
+  Make sure you're logged in as root or in the `sudo` group to execute this command.
 
 ---
 
-## Licença 📜
+## License 📜
 
-Sinta-se à vontade para usar, modificar e compartilhar este script. Contribuições são bem-vindas!
+Feel free to use, modify, and share this script. Contributions are welcome!
 
 ---
