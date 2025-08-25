@@ -1,7 +1,7 @@
 
 # Debian_Stable2Testing
 
-BASH script to switch the Debian 12 Bookworm branch from **Stable** to **Testing**.
+BASH script to switch the Debian 13 Trixie branch from **Stable** to **Testing**.
 
 ---
 
