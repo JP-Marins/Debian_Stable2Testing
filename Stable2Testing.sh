@@ -16,7 +16,7 @@ if grep -q 'testing' /etc/apt/sources.list; then
     exit 1
 else
     echo "Changing branch to Testing..."
-    sed -i 's/bookworm/testing/g' /etc/apt/sources.list
+    sed -i 's/trixie/testing/g' /etc/apt/sources.list
 fi
 
 # System update
